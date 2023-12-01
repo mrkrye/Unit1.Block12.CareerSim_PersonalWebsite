@@ -1,18 +1,126 @@
- header{
-    border: 3px solid grey;
-    padding: 5px;
-    background-color: silver;
-    text-align: right;
-    margin: flex;
-    
- }
+nav{
+    position: fixed; 
+    /* having fixed position allows navigation bar to stay even as we scroll down */
+    left: 0;
+    right: 0;
+    align-items: center;
+    background-color: rgb(45, 6, 97);
+    color: white;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    /* allows anchor elements to stay inline */
+    justify-content: space-between; 
+    /*creates empty space in between the contents  */
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 0 12px -2px black;
+}
 
+.active{
+    border-bottom: 2px solid rgb(114, 103, 231);
+    /* creates a line underneath the html page that is currently being viewed*/
+}
+
+a{
+    color: white;
+    margin: 5px;
+    /* spaces apart the three anchor tags */
+    font-size: larger;
+    text-decoration: none;
+    /* removes the underline that the links create by default */
+
+}
  #name{
-    text-align: left;
-    margin: 2px;
-    padding: 2px;
+    /* margin-inline-start: 0px;
+    margin-inline-end: 100px; */
+    /* margin inline properties specifies the margin at the beginning and end of the inline direction */
+    font-weight: 100;
+    font-size: 30;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+
  }
 
- h1{
+body{
+    background-color: rgba(103, 57, 124, 0.856);
+    max-width: 960px;
+    margin: 0 auto;
+    /* created a margin on body element so that the main element can have its own block inside the body */
+}
+
+main{
+    min-height: 10px;
+    position: inherit;
+    /* main element positions itself according to its parent element which is the body */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    display: block;
+    padding: 85px 24px 96px;
+    background-color: rgba(209, 172, 226, 0.856);
+    box-shadow: 0 0 12px -2px black;
+    /* creates an effect on the borders of the main element */
+
+}
+
+img{
+     float: right;
+     /* allows image to be clipped to other portions of the page */
+     width: 270px;
+     margin: 10px 0 10px 10px;
+     /* creates space from all other elements */
+}
+
+#about_image{
+    float: right;
+    margin: 0 24px 24px 24px;
+    height: 100;
+    /* need to fix images so it stays with the <p> tags and not alongside the <h> tags */
+}
+
+.quote{
+    margin-top: 75px;
+    /* creates space from the top which brings element closer towards the bottom */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+section{
+    border-top: 2px solid rgb(114, 103, 231);
+    /* creates a straight line going across the page */
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+
+ h2{
     text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+    display: block;
+
  }
+
+ p{
+    display: block;
+    font-size: 21px;
+ }
+
+#about_header{
+    font-weight: 300;
+    font-size: 2em;
+    /* 'em' is a unit of measurement similar to px; best used for font sizes*/
+
+}
+
+#about_section{
+    height: 128px;
+    /* i need more practice editing things within sections and without having to create too many class/id selectors */
+}
