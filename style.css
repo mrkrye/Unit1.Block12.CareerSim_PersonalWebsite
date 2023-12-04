@@ -87,7 +87,7 @@ img{
     font-size: 40px;
     font-weight: 100;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
 }
 
