@@ -1,3 +1,16 @@
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  background-color: rgba(103, 57, 124, 0.856);
+  max-width: 980px;
+  margin: 0 auto;
+  /* created a margin on body element so that the main element can have its own block inside the body */
+}
+
 nav {
   position: fixed;
   /* having fixed position allows navigation bar to stay even as we scroll down */
@@ -42,13 +55,6 @@ a {
   font-family: "Times New Roman", Times, serif;
 }
 
-body {
-  background-color: rgba(103, 57, 124, 0.856);
-  max-width: 960px;
-  margin: 0 auto;
-  /* created a margin on body element so that the main element can have its own block inside the body */
-}
-
 main {
   min-height: 10px;
   position: inherit;
@@ -62,19 +68,16 @@ main {
   /* creates an effect on the borders of the main element */
 }
 
-img {
+main img {
+  /* adding parent element followed by another element within the parent will select that element for adjustment */
   float: right;
   /* allows image to be clipped to other portions of the page */
   width: 270px;
   margin: 10px 0 10px 10px;
   /* creates space from all other elements */
 }
-
-#about_image {
-  float: right;
-  margin: 0 24px 24px 24px;
-  height: 100;
-  /* need to fix images so it stays with the <p> tags and not alongside the <h> tags */
+.home_section {
+  min-height: 100%;
 }
 
 .quote {
@@ -85,13 +88,6 @@ img {
   font-weight: 100;
   text-align: center;
   text-transform: capitalize;
-}
-
-section {
-  border-top: 2px solid rgb(114, 103, 231);
-  /* creates a straight line going across the page */
-  box-sizing: border-box;
-  font-size: 16px;
 }
 
 h2 {
@@ -107,13 +103,78 @@ p {
   font-size: 21px;
 }
 
-#about_header {
+.about_header {
   font-weight: 300;
   font-size: 2em;
   /* 'em' is a unit of measurement similar to px; best used for font sizes*/
 }
 
-#about_section {
-  height: 128px;
+.exercise {
+  border-top: 2px solid rgb(114, 103, 231);
+  /* creates a straight line going across the page */
+  /* box-sizing: border-box; */
+  font-size: 16px;
   /* i need more practice editing things within sections and without having to create too many class/id selectors */
+}
+
+.exercise img {
+  padding: 10px;
+  margin-top: 15px;
+  width: 250px;
+  height: 190px;
+  padding: 10px;
+}
+
+.exercise h2 {
+  /* padding: 2px; */
+  margin: 10px 10px 10px 0px;
+  /* removed margin spacing on the left so it aligns with the <p> elements */
+}
+
+.exercise p {
+  margin-top: 2px;
+}
+.games {
+  border-top: 2px solid rgb(114, 103, 231);
+  /* box-sizing: border-box; */
+  font-size: 16px;
+}
+.games img {
+  float: left;
+  /* move images to the left hand portion of the section */
+  margin-top: 10px;
+  width: 250px;
+  /* height: 190px; */
+  padding: 10px;
+}
+
+.games h2 {
+  text-align: right;
+  margin: 10px 0px 10px 10px;
+  /* manually corrected positioning of both the section header and image within the section */
+}
+
+.games p {
+  margin-top: 2px;
+}
+
+.travel {
+  border-top: 2px solid rgb(114, 103, 231);
+  font-size: 16px;
+}
+.travel img {
+  float: right;
+  margin-top: 10px;
+  width: 250px;
+  height: 350px;
+  padding: 10px;
+}
+
+.travel h2 {
+  text-align: center;
+  margin: 10px 0px 10px 10px;
+}
+
+.travel p {
+  margin-top: 2px;
 }
